@@ -1,0 +1,6 @@
+apscheduler
+python-dateutil
+gunicorn
+Flask==1.1.1
+flask_sqlalchemy
+requests
