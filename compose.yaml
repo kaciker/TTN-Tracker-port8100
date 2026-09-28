@@ -1,6 +1,14 @@
 services:
   web:
     image: nginx:alpine
+    mem_limit: 64m
+    cpus: 0.25
+    pids_limit: 64
+    read_only: true
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
     networks:
       - sandbox_internal
 
