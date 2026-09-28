@@ -1,6 +1,6 @@
 services:
   web:
-    image: nginx:alpine
+    image: nginxinc/nginx-unprivileged:alpine
     mem_limit: 64m
     cpus: 0.25
     pids_limit: 64
